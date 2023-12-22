@@ -7,7 +7,7 @@ const router = Router();
 router.use('/batteries', batteryRoutes);
 
 // NOTE: Health check route
-router.get('/', (req, res) => {
+router.get('/', (_, res) => {
   res.status(200).send('ok!!!');
 });
 

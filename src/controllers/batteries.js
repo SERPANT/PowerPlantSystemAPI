@@ -3,7 +3,7 @@ const HttpStatus = require('http-status-codes');
 const batteryServices = require('../services/batteries');
 
 /**
- * Get all tasks
+ * Get all batteries
  */
 function fetchAll(_, res, next) {
   batteryServices

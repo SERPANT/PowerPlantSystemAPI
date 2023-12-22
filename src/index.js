@@ -8,6 +8,9 @@ const config = require('./config');
 const routes = require('./routes');
 const errorHandler = require('./middlewares/errorHandler');
 
+// Set database
+require('./db');
+
 const app = express();
 
 app.use(cors());
