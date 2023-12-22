@@ -9,4 +9,9 @@ const router = Router();
  */
 router.get('/', batteryServices.fetchAll);
 
+/**
+ * POST /api/batteries
+ */
+router.post('/', batteryServices.create);
+
 module.exports = router;

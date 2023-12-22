@@ -15,6 +15,22 @@ function fetchAll(_, res, next) {
     .catch((err) => next(err));
 }
 
+/**
+ * Create a new battery record
+ */
+function create(req, res, next) {
+  const batteryObj = req.body;
+
+  batteryServices
+    .create(batteryObj)
+    .then((data) => {
+      res.status(HttpStatus.StatusCodes.OK);
+      res.json({ data });
+    })
+    .catch((err) => next(err));
+}
+
 module.exports = {
   fetchAll,
+  create,
 };
