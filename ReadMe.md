@@ -22,4 +22,4 @@ Run the project
 
 ## Database setup
 
-Requires mondo db. And setting up the database name same as that in the env file
+Requires mongo db. And setting up the database name same as that in the env file
