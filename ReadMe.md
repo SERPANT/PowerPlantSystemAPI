@@ -19,3 +19,7 @@ Run the project
 - Clone .env.example and create a new file called .env
 - Add the missing credential and info in the .env file
 - Run the project with 'npm start' command
+
+## Database setup
+
+Requires mondo db. And setting up the database name same as that in the env file
