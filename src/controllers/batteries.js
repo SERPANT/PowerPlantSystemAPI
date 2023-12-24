@@ -5,9 +5,11 @@ const batteryServices = require('../services/batteries');
 /**
  * Get all batteries
  */
-function fetchAll(_, res, next) {
+function fetchAll(req, res, next) {
+  const { searchName, postCodeFrom, postCodeTo } = req.query;
+
   batteryServices
-    .getAll()
+    .getAll(searchName, postCodeFrom, postCodeTo)
     .then((data) => {
       res.status(HttpStatus.StatusCodes.OK);
       res.json({ data });
